@@ -1,0 +1,23 @@
+name: dynamic_island
+description: A transparent Windows 11 island with global media, reminders and timers.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  window_manager: ^0.5.2
+  smtc_windows: ^1.1.0
+  # Match the generated Dart/Rust bridge shipped by smtc_windows 1.1.0.
+  flutter_rust_bridge: 2.11.1
+  sqflite_common_ffi: ^2.3.6
+  win32: ^5.14.0
+  path: ^1.9.1
+  path_provider: ^2.1.5
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
